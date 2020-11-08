@@ -5,7 +5,7 @@ Here I did not use particular heuristic. The formula for the distance between po
 we could use another one.
 We could take into account the frequency of each class in the training set when we look at the class the most 
 present around the individual to classify. 
-We could also weight with the distance of the nearest points. (line 44)
+We could also weight with the distance of the nearest points. (line 46)
 
 
 Code pour implémenter le Knn, avec 10 classes différentes possibles comme réponse. Le fichier data.csv
@@ -16,5 +16,5 @@ des distances mais on pourrait en utiliser d'autres.
 On pourrait aussi regarder la fréquence de chacune des classes dans les données d'entrainement et ponderer 
 la somme du nombre de points proches de chaque classe par cette fréquence.
 On pourrait également pondérer par l'inverse de la distance de points proches comme proposé en commentaire
-dans le code (ligne 44)
+dans le code (ligne 46)
 
