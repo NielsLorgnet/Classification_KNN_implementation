@@ -6,6 +6,8 @@ Created on Tue Apr 28 19:18:09 2020
 """
 import numpy as np
 
+# Lire le readme pour ce qui est des heuristiques possibles et de la version ci-dessous
+# x en paramètre est le nombre de voisins proches à regarder autour de chaque point à classer
 def k_nn(x):
     
     # On ouvre tout d'abord le fichier contenant le dataset, que l'on stocke sous forme
@@ -21,7 +23,7 @@ def k_nn(x):
     # On ouvre ensuite le fichier contenant les données test, que l'on stocke sous forme
     # de liste de listes, avec une liste par individu
     places = []    
-    with open('finalTest.csv', 'r') as filehandle:
+    with open('data_eval.csv', 'r') as filehandle:
         places = [current_place.rstrip() for current_place in filehandle.readlines()]
     unknown=[]
     for i in range(len(places)):
@@ -132,14 +134,10 @@ def k_nn(x):
     # déterminer la classe  
     
     """  Au cas où l'on souhaiterait connaître la précision de l'algorithme, on execute
-         le code ci-dessous. Il faut également remplacer le fichier test de base
-        dans lequel sont présents les individus à classer (2ème fichier que l'on a ouvert)
-        par un fichier contenant une partie du dataset par exemple, contenant des individus
-        dont on connaît déjà la classe (data_eval.csv mis à disposition). 
-        Chaque liste contenu dans unknown aura comme 4ème valeur la classe de l'individu 
-        et comme 5ème valeur la classe prédite par le modèle.
+         le code ci-dessous. Chaque liste contenue dans unknown aura comme 4ème valeur 
+         la classe de l'individu et comme 5ème valeur la classe prédite par le modèle.
     """
-    """
+    
            
     compteur=0
     for i in range(len(unknown)):
@@ -147,7 +145,7 @@ def k_nn(x):
             compteur+=1
     compteur=compteur*100/len(unknown)
     print (compteur)
-    """
+    
     
 k_nn(11)
- 
+# En utilisant ce dataset et cette implémentation, la meilleure valeur pour x est 11
