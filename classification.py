@@ -21,7 +21,7 @@ def k_nn(x):
     # On ouvre ensuite le fichier contenant les données test, que l'on stocke sous forme
     # de liste de listes, avec une liste par individu
     places = []    
-    with open('data_eval.csv', 'r') as filehandle:
+    with open('finalTest.csv', 'r') as filehandle:
         places = [current_place.rstrip() for current_place in filehandle.readlines()]
     unknown=[]
     for i in range(len(places)):
