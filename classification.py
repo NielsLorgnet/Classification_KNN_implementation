@@ -135,9 +135,9 @@ def k_nn(x):
          le code ci-dessous. Il faut également remplacer le fichier test de base
         dans lequel sont présents les individus à classer (2ème fichier que l'on a ouvert)
         par un fichier contenant une partie du dataset par exemple, contenant des individus
-        dont on connaît déjà la classe. Chaque liste contenu dans unknown aura comme 
-        4ème valeur la classe de l'individu et comme 5ème valeur la classe prédite par le 
-        modèle.
+        dont on connaît déjà la classe (data_eval.csv mis à disposition). 
+        Chaque liste contenu dans unknown aura comme 4ème valeur la classe de l'individu 
+        et comme 5ème valeur la classe prédite par le modèle.
     """
     """
            
