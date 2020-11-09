@@ -5,7 +5,7 @@ Created on Tue Apr 28 19:18:09 2020
 @author: Niels
 """
 import numpy as np
-# Check the readme file for information about the code
+# Check the readme file for information about the code. The accuracy using random forest on Rstudio as a comparison is 0.87.
 # Lire le readme pour ce qui est des heuristiques possibles et de la version ci-dessous
 # x en paramètre est le nombre de voisins proches à regarder autour de chaque point à classer
 def k_nn(x):
