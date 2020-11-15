@@ -126,7 +126,7 @@ def k_nn(x):
             u[4]="A"
     """
     
-    fichier= open('result_final.txt', 'a') 
+    fichier= open('result_final.txt', 'w') 
     for u in unknown:
         fichier.write(u[len(u)-1]+"\n")
     fichier.close()        
