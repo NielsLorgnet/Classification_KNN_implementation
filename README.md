@@ -1,7 +1,7 @@
 # Classification_KNN_algorithm
 Code to implement the KNN algorithm, classifying between 10 classes according to the dataset I used. To compare,
 the accuracy obtained with a random forest model using random forest function on Rstudio is 0.87. We can deduce that
-this model is correct since random forest is a good model for classification. It is worth knowing that there is 
+this model is correct (also 0.87 accuracy) since random forest is a good model for classification. It is worth knowing that there is 
 an implementation of the KNN algorithm in the scikit-learn library.
 
 
